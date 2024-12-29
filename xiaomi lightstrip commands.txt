@@ -1,0 +1,258 @@
+Running command descriptors
+Toggle (light_toggle_2_1)
+        Access: --x
+        Extras: {'urn': <URN urn:miot-spec-v2:action:toggle:00002811:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, 'siid': 2, 'aiid': 1, 'miot_action': MiotAction(urn=<URN urn:miot-spec-v2:action:toggle:00002811:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, description='Toggle', service=MiotService(siid=2, urn=<URN urn:miot-spec-v2:service:light:00007802:philips-strip5:1 parent:None>, description='Light'), aiid=1, inputs=[], outputs=[])}
+
+Switch Status (light_on_2_1)
+        Type: <class 'bool'>
+        Attribute: light_on
+        Access: rw-
+        Extras: {'urn': <URN urn:miot-spec-v2:property:on:00000006:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, 'siid': 2, 'piid': 1, 'miot_property': MiotProperty(urn=<URN urn:miot-spec-v2:property:on:00000006:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, description='Switch Status', service=MiotService(siid=2, urn=<URN urn:miot-spec-v2:service:light:00007802:philips-strip5:1 parent:None>, description='Light'), piid=1, format=<class 'bool'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Write: 'write'>, <MiotAccess.Notify: 'notify'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 2, 1, name='light:on')
+        Constraint: PropertyConstraint.Unset
+
+Mode (light_mode_2_2)
+        Type: <class 'int'>
+        Attribute: light_mode
+        Access: rw-
+        Extras: {'urn': <URN urn:miot-spec-v2:property:mode:00000008:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, 'siid': 2, 'piid': 2, 'miot_property': MiotProperty(urn=<URN urn:miot-spec-v2:property:mode:00000008:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, description='Mode', service=MiotService(siid=2, urn=<URN urn:miot-spec-v2:service:light:00007802:philips-strip5:1 parent:None>, description='Light'), piid=2, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Write: 'write'>, <MiotAccess.Notify: 'notify'>], unit=None, range=[0, 8, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 2, 2, name='light:mode')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 8 (step 1)
+
+Brightness (light_brightness_2_3)
+        Type: <class 'int'>
+        Unit: percentage
+        Attribute: light_brightness
+        Access: rw-
+        Extras: {'urn': <URN urn:miot-spec-v2:property:brightness:0000000D:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, 'siid': 2, 'piid': 3, 'miot_property': MiotProperty(urn=<URN urn:miot-spec-v2:property:brightness:0000000D:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, description='Brightness', service=MiotService(siid=2, urn=<URN urn:miot-spec-v2:service:light:00007802:philips-strip5:1 parent:None>, description='Light'), piid=3, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Write: 'write'>, <MiotAccess.Notify: 'notify'>], unit='percentage', range=[1, 100, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 2, 3, name='light:brightness')
+        Constraint: PropertyConstraint.Range
+        Range: 1 - 100 (step 1)
+
+Color (light_color_2_4)
+        Type: <class 'int'>
+        Unit: rgb
+        Attribute: light_color
+        Access: rw-
+        Extras: {'urn': <URN urn:miot-spec-v2:property:color:0000000E:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, 'siid': 2, 'piid': 4, 'miot_property': MiotProperty(urn=<URN urn:miot-spec-v2:property:color:0000000E:philips-strip5:1 parent:namespace='miot-spec-v2' type='service' name='light' internal_id='00007802' model='philips-strip5' version=1 unexpected=None>, description='Color', service=MiotService(siid=2, urn=<URN urn:miot-spec-v2:service:light:00007802:philips-strip5:1 parent:None>, description='Light'), piid=4, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Write: 'write'>, <MiotAccess.Notify: 'notify'>], unit='rgb', range=[0, 16777215, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 2, 4, name='light:color')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 16777215 (step 1)
+
+brightness-up (extra_attribute_brightness_up_3_1)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:brightness-up:00002801:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 1, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:brightness-up:00002801:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='brightness-up', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=1, inputs=[], outputs=[])}
+
+brightness-down (extra_attribute_brightness_down_3_2)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:brightness-down:00002802:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 2, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:brightness-down:00002802:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='brightness-down', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=2, inputs=[], outputs=[])}
+
+rhythm-save (extra_attribute_rhythm_save_3_3)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:rhythm-save:00002803:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 3, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:rhythm-save:00002803:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-save', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=3, inputs=[MiotProperty(urn=<URN urn:philips-spec:property:rhythm-color-type:00000006:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-color-type', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=6, format=<class 'str'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None), MiotProperty(urn=<URN urn:philips-spec:property:rhythm-sensitivity:00000007:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-sensitivity', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=7, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 2, 1], choices=None, gatt_access=None, value=None), MiotProperty(urn=<URN urn:philips-spec:property:rhythm-animation:00000008:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-animation', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=8, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 3, 1], choices=None, gatt_access=None, value=None)], outputs=[])}
+        Inputs: [PropertyDescriptor(id='extra_attribute_rhythm_color_type_3_6', name='rhythm-color-type', type=<class 'str'>, unit=None, status_attribute='extra_attribute_rhythm_color_type', access=<AccessFlags.Read|Write: 3>, constraint=<PropertyConstraint.Unset: 1>), RangeDescriptor(id='extra_attribute_rhythm_sensitivity_3_7', name='rhythm-sensitivity', unit=None, status_attribute='extra_attribute_rhythm_sensitivity', access=<AccessFlags.Read|Write: 3>, min_value=0, max_value=2, step=1, range_attribute=None, type=<class 'int'>, constraint=<PropertyConstraint.Range: 2>), RangeDescriptor(id='extra_attribute_rhythm_animation_3_8', name='rhythm-animation', unit=None, status_attribute='extra_attribute_rhythm_animation', access=<AccessFlags.Read|Write: 3>, min_value=0, max_value=3, step=1, range_attribute=None, type=<class 'int'>, constraint=<PropertyConstraint.Range: 2>)]
+
+diy-color-copy (extra_attribute_diy_color_copy_3_4)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:diy-color-copy:00002804:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 4, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:diy-color-copy:00002804:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color-copy', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=4, inputs=[], outputs=[])}
+
+diy-color-extend (extra_attribute_diy_color_extend_3_5)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:diy-color-extend:00002805:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 5, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:diy-color-extend:00002805:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color-extend', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=5, inputs=[], outputs=[])}
+
+toggle-tv (extra_attribute_toggle_tv_3_6)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:toggle-tv:00002806:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 6, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:toggle-tv:00002806:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='toggle-tv', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=6, inputs=[], outputs=[])}
+
+stop-preview-diy (extra_attribute_stop_preview_diy_3_7)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:stop-preview-diy:00002807:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 7, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:stop-preview-diy:00002807:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='stop-preview-diy', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=7, inputs=[], outputs=[])}
+
+stop-preview-rhythm (extra_attribute_stop_preview_rhythm_3_8)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:stop-preview-rhythm:00002808:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 8, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:stop-preview-rhythm:00002808:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='stop-preview-rhythm', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=8, inputs=[], outputs=[])}
+
+start-preview-rhythm (extra_attribute_start_preview_rhythm_3_9)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:start-preview-rhythm:00002809:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 9, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:start-preview-rhythm:00002809:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='start-preview-rhythm', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=9, inputs=[], outputs=[])}
+
+start-preview-diy (extra_attribute_start_preview_diy_3_10)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:start-preview-diy:0000280a:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 10, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:start-preview-diy:0000280a:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='start-preview-diy', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=10, inputs=[], outputs=[])}
+
+diy-save (extra_attribute_diy_save_3_11)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:diy-save:0000280b:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 11, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:diy-save:0000280b:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-save', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=11, inputs=[], outputs=[MiotProperty(urn=<URN urn:philips-spec:property:diy-free-id:00000011:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-free-id', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=19, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>], unit=None, range=[0, 20, 1], choices=None, gatt_access=None, value=None)])}
+
+toggle-rhythm (extra_attribute_toggle_rhythm_3_12)
+        Access: --x
+        Extras: {'urn': <URN urn:philips-spec:action:toggle-rhythm:0000280c:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'aiid': 12, 'miot_action': MiotAction(urn=<URN urn:philips-spec:action:toggle-rhythm:0000280c:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='toggle-rhythm', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), aiid=12, inputs=[], outputs=[])}
+
+mitv-rhythm (extra_attribute_mitv_rhythm_3_2)
+        Type: <class 'bool'>
+        Attribute: extra_attribute_mitv_rhythm
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:mitv-rhythm:00000002:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 2, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:mitv-rhythm:00000002:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='mitv-rhythm', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=2, format=<class 'bool'>, access=[<MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>, <MiotAccess.Read: 'read'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 2, name='extra-attribute:mitv-rhythm')
+        Constraint: PropertyConstraint.Unset
+
+acousto-optic-rhythm (extra_attribute_acousto_optic_rhythm_3_3)
+        Type: <class 'bool'>
+        Attribute: extra_attribute_acousto_optic_rhythm
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:acousto-optic-rhythm:00000003:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 3, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:acousto-optic-rhythm:00000003:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='acousto-optic-rhythm', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=3, format=<class 'bool'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 3, name='extra-attribute:acousto-optic-rhythm')
+        Constraint: PropertyConstraint.Unset
+
+dvalue (extra_attribute_dvalue_3_4)
+        Type: <class 'int'>
+        Attribute: extra_attribute_dvalue
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:dvalue:00000004:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 4, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:dvalue:00000004:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='dvalue', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=4, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 21600, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 4, name='extra-attribute:dvalue')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 21600 (step 1)
+
+rhythm-color-type (extra_attribute_rhythm_color_type_3_6)
+        Type: <class 'str'>
+        Attribute: extra_attribute_rhythm_color_type
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:rhythm-color-type:00000006:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 6, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:rhythm-color-type:00000006:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-color-type', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=6, format=<class 'str'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 6, name='extra-attribute:rhythm-color-type')
+        Constraint: PropertyConstraint.Unset
+
+rhythm-sensitivity (extra_attribute_rhythm_sensitivity_3_7)
+        Type: <class 'int'>
+        Attribute: extra_attribute_rhythm_sensitivity
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:rhythm-sensitivity:00000007:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 7, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:rhythm-sensitivity:00000007:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-sensitivity', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=7, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 2, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 7, name='extra-attribute:rhythm-sensitivity')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 2 (step 1)
+
+rhythm-animation (extra_attribute_rhythm_animation_3_8)
+        Type: <class 'int'>
+        Attribute: extra_attribute_rhythm_animation
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:rhythm-animation:00000008:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 8, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:rhythm-animation:00000008:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='rhythm-animation', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=8, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 3, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 8, name='extra-attribute:rhythm-animation')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 3 (step 1)
+
+diy-color (extra_attribute_diy_color_3_9)
+        Type: <class 'str'>
+        Attribute: extra_attribute_diy_color
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-color:00000009:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 9, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-color:00000009:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=9, format=<class 'str'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 9, name='extra-attribute:diy-color')
+        Constraint: PropertyConstraint.Unset
+
+diy-color-random (extra_attribute_diy_color_random_3_10)
+        Type: <class 'str'>
+        Attribute: extra_attribute_diy_color_random
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-color-random:0000000a:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 10, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-color-random:0000000a:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color-random', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=10, format=<class 'str'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 10, name='extra-attribute:diy-color-random')
+        Constraint: PropertyConstraint.Unset
+
+diy-animation (extra_attribute_diy_animation_3_11)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_animation
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-animation:0000000b:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 11, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-animation:0000000b:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-animation', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=11, format=<class 'int'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=[0, 9, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 11, name='extra-attribute:diy-animation')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 9 (step 1)
+
+diy-id (extra_attribute_diy_id_3_12)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_id
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-id:0000000c:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 12, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-id:0000000c:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-id', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=12, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=[0, 20, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 12, name='extra-attribute:diy-id')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 20 (step 1)
+
+diy-id-save (extra_attribute_diy_id_save_3_13)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_id_save
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-id-save:0000000d:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 13, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-id-save:0000000d:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-id-save', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=13, format=<class 'int'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=[0, 19, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 13, name='extra-attribute:diy-id-save')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 19 (step 1)
+
+diy-id-delete (extra_attribute_diy_id_delete_3_14)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_id_delete
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-id-delete:0000000e:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 14, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-id-delete:0000000e:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-id-delete', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=14, format=<class 'int'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=[0, 19, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 14, name='extra-attribute:diy-id-delete')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 19 (step 1)
+
+mitv-available (extra_attribute_mitv_available_3_15)
+        Type: <class 'bool'>
+        Attribute: extra_attribute_mitv_available
+        Access: r--
+        Extras: {'urn': <URN urn:philips-spec:property:mitv-available:0000000f:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 15, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:mitv-available:0000000f:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='mitv-available', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=15, format=<class 'bool'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Constraint: PropertyConstraint.Unset
+
+length-strip (extra_attribute_length_strip_3_16)
+        Type: <class 'int'>
+        Attribute: extra_attribute_length_strip
+        Access: r--
+        Extras: {'urn': <URN urn:philips-spec:property:length-strip:00000010:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 16, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:length-strip:00000010:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='length-strip', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=16, format=<class 'int'>, access=[<MiotAccess.Notify: 'notify'>, <MiotAccess.Read: 'read'>], unit=None, range=[2, 5, 1], choices=None, gatt_access=None, value=None)}
+        Constraint: PropertyConstraint.Range
+        Range: 2 - 5 (step 1)
+
+diy-color-clone (extra_attribute_diy_color_clone_3_17)
+        Type: <class 'str'>
+        Attribute: extra_attribute_diy_color_clone
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-color-clone:00000001:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 17, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-color-clone:00000001:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color-clone', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=17, format=<class 'str'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 17, name='extra-attribute:diy-color-clone')
+        Constraint: PropertyConstraint.Unset
+
+diy-color-easy (extra_attribute_diy_color_easy_3_18)
+        Type: <class 'str'>
+        Attribute: extra_attribute_diy_color_easy
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-color-easy:00000005:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 18, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-color-easy:00000005:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-color-easy', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=18, format=<class 'str'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 18, name='extra-attribute:diy-color-easy')
+        Constraint: PropertyConstraint.Unset
+
+diy-free-id (extra_attribute_diy_free_id_3_19)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_free_id
+        Access: r--
+        Extras: {'urn': <URN urn:philips-spec:property:diy-free-id:00000011:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 19, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-free-id:00000011:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-free-id', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=19, format=<class 'int'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>], unit=None, range=[0, 20, 1], choices=None, gatt_access=None, value=None)}
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 20 (step 1)
+
+control-scene (extra_attribute_control_scene_3_20)
+        Type: <class 'str'>
+        Attribute: extra_attribute_control_scene
+        Access: rw-
+        Extras: {'urn': <URN urn:philips-spec:property:control-scene:00000012:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 20, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:control-scene:00000012:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='control-scene', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=20, format=<class 'str'>, access=[<MiotAccess.Read: 'read'>, <MiotAccess.Notify: 'notify'>, <MiotAccess.Write: 'write'>], unit=None, range=None, choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 20, name='extra-attribute:control-scene')
+        Constraint: PropertyConstraint.Unset
+
+diy-id-save (extra_attribute_diy_id_save_3_21)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_id_save
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-id-save:00000013:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 21, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-id-save:00000013:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-id-save', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=21, format=<class 'int'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=[0, 20, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 21, name='extra-attribute:diy-id-save')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 20 (step 1)
+
+diy-id-delete (extra_attribute_diy_id_delete_3_22)
+        Type: <class 'int'>
+        Attribute: extra_attribute_diy_id_delete
+        Access: -w-
+        Extras: {'urn': <URN urn:philips-spec:property:diy-id-delete:00000014:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, 'siid': 3, 'piid': 22, 'miot_property': MiotProperty(urn=<URN urn:philips-spec:property:diy-id-delete:00000014:philips-strip5:1 parent:namespace='philips-spec' type='service' name='extra-attribute' internal_id='00007801' model='philips-strip5' version=1 unexpected=None>, description='diy-id-delete', service=MiotService(siid=3, urn=<URN urn:philips-spec:service:extra-attribute:00007801:philips-strip5:1 parent:None>, description='extra-attribute'), piid=22, format=<class 'int'>, access=[<MiotAccess.Write: 'write'>], unit=None, range=[0, 20, 1], choices=None, gatt_access=None, value=None)}
+        Setter: functools.partial(<bound method MiotDevice.set_property_by of <GenericMiot: 192.168.1.212 (token: 4ee353cd722f4e791dfb9481526d411a)>>, 3, 22, name='extra-attribute:diy-id-delete')
+        Constraint: PropertyConstraint.Range
+        Range: 0 - 20 (step 1)

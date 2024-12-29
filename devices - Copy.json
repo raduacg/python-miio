@@ -1,0 +1,1 @@
+{"devices": [{"name": "Light1", "ip": "192.168.1.212", "token": "4ee353cd722f4e791dfb9481526d411a", "region": {"margin_left": 30, "margin_right": 30, "margin_top": 15, "margin_bottom": 21}}, {"name": "Light2", "ip": "192.168.1.213", "token": "4ee353cd722f4e791dfb9481526d411a", "region": {"margin_left": 0, "margin_right": 0, "margin_top": 30, "margin_bottom": 0}}]}
