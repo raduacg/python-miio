@@ -1240,3 +1240,17 @@
 2024-12-23 18:27:57,708:INFO:Top: Skipped sending command due to high similarity (100.00%)
 2024-12-23 18:27:57,783:INFO:Bot: Skipped sending command due to high similarity (98.60%)
 2024-12-23 18:27:58,075:INFO:Top: Skipped sending command due to high similarity (100.00%)
+2025-01-21 11:12:53,631:ERROR:Top: Failed to send_command(siid=3, piid=12, value=1) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:13,227:ERROR:Top: Failed to send_command(siid=3, piid=12, value=2) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:38,626:ERROR:Top: Failed to send_command(siid=3, piid=12, value=3) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:43,637:ERROR:Top: Failed to send_command(siid=3, piid=12, value=1) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:48,655:ERROR:Top: Failed to send_command(siid=3, piid=12, value=1) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:53,932:ERROR:Top: Failed to send_command(siid=2, piid=3, value=99) - Unable to discover the device 192.168.1.164
+2025-01-21 11:13:58,949:ERROR:Top: Failed to send_command(siid=2, piid=3, value=92) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:15,640:ERROR:Top: Failed to send_command(siid=3, piid=12, value=1) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:23,833:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:28,856:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:33,862:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:38,874:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:43,884:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
+2025-01-21 11:14:48,894:ERROR:Top: Failed to send_action(siid=3, aiid=1, params=[]) - Unable to discover the device 192.168.1.164
